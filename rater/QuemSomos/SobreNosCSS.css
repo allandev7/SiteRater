@@ -1,0 +1,185 @@
+
+/*primeira parte do site*/
+.part1{
+	height: 100vh;
+	background-image: url(imgsPagina/fundinho.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin-top: 0;
+}
+.intro{
+	opacity: 0;
+  	transform: translate3d(-500px,0px,0);
+  	transition: 1.5s;
+	padding-top:  150px;
+	margin-left: 15%;
+	float: left;
+}
+ .tituloGG{
+ 	color:white;
+ 	font-size: 5.5em;
+ }
+.icone{
+	text-align: center;
+	transform: translate3d(0,500px,0);
+	transition: 1.5s;
+	float: 	left;
+	width: 	25.60%;
+	padding-top: 15.64%;
+	margin-left: 11.37%;
+}
+.iconeStart{
+	transform: translate3d(0,0,0);
+}
+
+
+
+/*segunda parte do site com missao visao valores*/
+ .partHMVV{
+ 	background-color: white;
+ 	height: 100%;
+ 	padding-bottom: 350px;
+ }
+.titleHist{
+	padding-top: 70px;
+	font-size: 5.5em;
+	color: #3165aa;
+	text-align: center;
+}
+.textos{
+	font-size: 2.0em;
+	color: gray;
+	text-align: justify;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding-top: 20px;
+}
+.mvv{
+	clear: both;
+	margin-top: 120px;
+	margin-left: 10%;
+}
+.mvvbox{
+	width: 26.6%;
+	float: left;
+	padding-left:30px;
+	padding-right:30px;
+}
+.titleMVV{
+	font-size: 3.2em;
+	color:#3165aa;
+	text-align: center;
+}
+.textsMVV{
+	font-size: 2.0em;
+	color: gray;
+	text-align: center;
+}
+.textValues{
+	font-size: 2.2em;
+	color:gray;
+	text-align: none;
+}
+
+
+/*parte com titulo gigante escrito nossa equipe*/
+.row{
+	clear: both;
+	background-image:url(imgsPagina/fundinho2.png);
+	background-size: cover;
+	background-repeat: 	no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	padding-top:90px;
+	padding-bottom: 90px;
+}
+.titleNE{
+	font-size: 6.7em;
+	color: white;
+	margin-left: 15%;
+}
+.subtitleNE{
+	margin-left: 15%;
+	font-size: 4.7em;
+	color: white;
+}
+
+
+/*terceira parte com NOSSA EQUIPE*/
+.partNE{
+	clear: both;
+	height: 100%;
+	width: 100%;
+}
+.blocopessoas{
+	opacity: 0;
+	transform: translate3d(-100px,0px,0);
+	transition: 1s;
+	clear: both;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 120px;
+	border-top: 1px solid #d8d8d8;
+	background-image: url("imgsPagina/aaa.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.imgsPessoas{
+	margin-top: 60px;
+	float: left;
+	width: 15.80%;
+	border: 2.5px solid #3165aa;
+	border-radius: 100%;
+	margin-left: 9%;
+	margin-bottom: 60px;
+	margin-right: 4%;
+}
+.nomes{
+	margin-top: 60px;
+	padding-top: 1.89%;
+	font-size: 4.0em;
+	color: #3165aa;
+}
+.cargos{
+	font-size: 2.5em;
+	font-style: italic;
+	color: gray;
+}
+.textoCargos{
+	width: 90%;
+	font-size: 2.2em;
+	color: gray;
+	font-style: italic;
+	text-align: justify-all;
+}
+.rodape{
+	margin-top: 0px;
+}
+
+/*animação */
+.t-start{
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+.intro-Start{
+	opacity: 1;
+	transform: translate3d(0,0,0);
+
+}
+.icone-Start{
+	opacity: 1;
+
+}
+
+
+@media (max-width: 900px) {
+	.icone{
+		display: none;
+	}
+	.mvvbox{
+		width: 70%;
+		margin-bottom: 10%;
+	}
+}

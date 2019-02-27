@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quem Somos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="..\styleMenu.css">
+	<link rel="stylesheet" type="text/css" href="..\rodape\rodape.css">
+	<link rel="stylesheet" type="text/css" href="SobreNosCSS.css">
+	<script src="jquery-3.3.1.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+</head>
+<body>
+
+	<input type="checkbox" id="btn-menu">
+	<div class="suamae">
+	<label for="btn-menu">&#9776;</label>
+	</div>
+	<nav class="menu">
+		<ul>
+			<li><a href="../compra/compra.html"><img class="downIco" src="../menu/downIco.png"></a></li>
+			<li><a class="button" href="#">QUEM SOMOS?</a></li>
+			<li><a class="button" href="../sobreosoftware/pgsoftware.html">SOFTWARE</a></li>
+			<li><a class="button" href="../pginicial/index.html">INICIO</a></li>
+		</ul>
+	</nav>
+
+
+
+
+
+
+	<section class="part1">
+		<div class="intro">
+			<h1 class="tituloGG">Conheça
+			<br>Nossa
+			<br>Equipe,
+			<br>Historia, Missão,
+			<br>Visão e Valores.</h1>
+		</div>
+		<img src="ratericon.png" class="icone">
+	</section>
+
+	<script>
+	$(document).ready(function(){
+		var
+			animationClass = 'intro-Start',
+			documentoTop = $(document).scrollTop();
+
+		function animarCentro(){
+			if(documentoTop => 0 || documentoTop <300) {
+				$('.intro').addClass(animationClass);
+				$('.icone').addClass('icone-Start')
+			}
+
+		}
+		animarCentro();
+
+	}());
+	</script>
+
+	<section class="partHMVV">
+		<h1 class="titleHist">Historia</h1>
+		<p class="textos">A história de nossa empresa começa mesmo antes de ela existir, antes de até mesmo sabermos que a formaríamos. Todos
+				os membros de nossa equipe antes pertenciam a diversas outras empresas que, cada uma em sua área, criaram diversos
+				produtos de sucesso no mercado, entre eles os softwares EstudoPocket, Leverans e Danger area. No entanto, cada membro
+				percebeu que esses produtos e outros não saíam do escopo do senso comum e percebeu-se a necessidade de inovar na
+				área do mercado em questão. Com o fim dessas empresas as quais os atuais membros da Rater pertenciam, estes se
+				reuniram com o objetivo de constituir uma nova empresa e levar adiante as ideias que antes não seriam possíveis,
+				e foram então traçados os primeiros esboços do que viria a ser primeiro produto lançado por nós, o software RATER.
+				Este software foi primeiramente idealizado quando fora exposto a problemática do método atualmente utilizado para
+				realizas entrevistas de emprego, que era por muitas vezes ineficiente e percebemos que a área em questão necessitava
+				de uma mudança urgente. O software criado foi nomeado RATER, palavra da língua inglesa para "Avaliador", o que
+				posteriormente acabou definindo o próprio nome da empresa.
+		</p>
+
+		<div class="mvv">
+			<div class="mvvbox">
+				<h1 class="titleMVV">Missão</h1>
+				<br>
+				<p class="textsMVV">
+					Melhorar o desempenho das empresas trazendo softwares que aceleram
+					processos e métodos antigos no ramo empresarial, com segurança, transparência e
+					de ótima qualidade.
+				</p>
+			</div>
+
+
+			<div class="mvvbox">
+				<h1 class="titleMVV">Visão</h1>
+				<br>
+				<p class="textsMVV">
+					Softwares sendo utilizados em milhares de empresas de todo o mundo, desde
+					uma empresa pequena até as mais renomadas no mercado, sempre ajudando no que
+					for necessário.</p>
+			</div>
+
+
+			<div class="mvvbox">
+				<h1 class="titleMVV">Valores</h1>
+				<br>
+				<p class="textValues">
+					-Buscar perfeição em tudo;<br>
+					-Responsabilidade com clientes e colaboradores;<br>
+					-Transparência e segurança nos softwares;<br>
+					-Versatilidade;<br>
+					-Qualidade de serviço e inovação;
+				</p>
+			</div>
+		</div>
+
+	</section>
+
+
+
+	<section class="row">
+		<h1 class="titleNE">Nossa Equipe</h1>
+		<h2 class="subtitleNE">Conheça os integrantes de nossa equipe.</h1>
+	</section>
+
+	<section class="partNE">
+
+		<div class="blocopessoas">
+				<img src="Fotos/Allan.png" class="imgsPessoas">
+				<h1 class="nomes">Allan Silva</h1>
+				<br>
+				<h1 class="cargos">CEO e Programador</h1>
+				<br>
+				<p class="textoCargos">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+		<div class="blocopessoas">
+			<img src="Fotos/Thiago.png" class="imgsPessoas">
+				<h1 class="nomes">Thiago Corrêa</h1>
+				<br>
+				<h1 class="cargos">Administrador de Banco de Dados</h1>
+				<br>
+				<p class="textoCargos">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+		<div class="blocopessoas">
+			<img src="Fotos/Davi.png" class="imgsPessoas">
+				<h1 class="nomes">Davi Ribeiro</h1>
+				<br>
+				<h1 class="cargos">Programador Web</h1>
+				<br>
+				<p class="textoCargos">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+		<div class="blocopessoas">
+			<img src="Fotos/Marcelo.png" class="imgsPessoas">
+				<h1 class="nomes">Marcelo Araujo</h1>
+				<br>
+				<h1 class="cargos">Designer</h1>
+				<br>
+				<p class="textoCargos">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+		<div class="blocopessoas">
+			<img src="Fotos/Rafael.png" class="imgsPessoas">
+				<h1 class="nomes">Rafael da Silva</h1>
+				<br>
+				<h1 class="cargos">Programdor</h1>
+				<br>
+				<p class="textoCargos">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+		<div class="blocopessoas">
+			<img src="Fotos/Daniel.png" class="imgsPessoas">
+				<h1 class="nomes">Daniel Gennari</h1>
+				<br>
+				<h1 class="cargos">Analista de Sistemas </h1>
+				<br>
+				<p class="textoCargos">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+	</section>
+	<script>
+
+		$(document).ready(function(){
+			var $target = $('.blocopessoas'),
+				animationClass = 't-start',
+				offset = $(window).height() * 6/7;
+
+			function animeScroll(){
+				var documentTop = $(document).scrollTop();
+
+				$target.each(function(){
+					var itemTop = $(this).offset().top;
+
+					if(documentTop > itemTop - offset) {
+						console.log(documentTop)
+						$(this).addClass(animationClass);
+						} else if(documentTop<itemTop){
+						$(this).removeClass(animationClass);
+					}
+				})
+			}
+
+
+
+			$(document).scroll(function(){
+				animeScroll();
+			})
+		}());
+	</script>
+
+	<section class="rodape">
+		<div class="mapasitebox">
+			<p class="topicos1">Mapa Do Site</p>
+			<a href="#" class="jooj"><p class="topicos2">Inicio</p></a>
+			<a href="#" class="jooj"><p class="topicos2">Software</p></a>
+			<a href="#" class="jooj"><p class="topicos2">Quem Somos?</p></a>
+			<a href="#" class="jooj"><p class="topicos2">Compra</p></a>
+		</div>
+
+		<div class="contatobox">
+			<p class="topicos1">Contato</p>
+			<p class="topicos2"><img src="..\rodape\whatsapp2.png" class="contatoImg">11 94002-8922</p>
+			<p class="topicos2"><img src="..\rodape\gps2.png" class="contatoImg">R. Virgínia Ferni, 400 - Itaquera, São Paulo - SP</p>
+			<p class="topicos2"><img src="..\rodape\gmail2.png" class="contatoImg">ratertcc@gmail.com</p>
+		</div>
+
+		<div class="faleConoscoBox">
+			<p class="topicos1">Fale Conosco</p>
+			<input type="text" name="email" placeholder="Seu Email*" class="emailTxt">
+			<br>
+			<input type="text" name="msg" placeholder="Mensagem" class="msgTxt">
+		</div>
+	</section>
+	<!--<section class="HMVV">
+		<div class="Historia">
+			<h1 class="titleHMVV">HISTORIA</h1>
+			<br>
+			<p class="textos">
+					A história de nossa empresa começa mesmo antes de ela existir, antes de até mesmo sabermos que a formaríamos. Todos
+				os membros de nossa equipe antes pertenciam a diversas outras empresas que, cada uma em sua área, criaram diversos
+				produtos de sucesso no mercado, entre eles os softwares EstudoPocket, Leverans e Danger area. No entanto, cada membro
+				percebeu que esses produtos e outros não saíam do escopo do senso comum e percebeu-se a necessidade de inovar na
+				área do mercado em questão. Com o fim dessas empresas as quais os atuais membros da Rater pertenciam, estes se
+				reuniram com o objetivo de constituir uma nova empresa e levar adiante as ideias que antes não seriam possíveis,
+				e foram então traçados os primeiros esboços do que viria a ser primeiro produto lançado por nós, o software RATER.<br><br>
+
+				Este software foi primeiramente idealizado quando fora exposto a problemática do método atualmente utilizado para
+				realizas entrevistas de emprego, que era por muitas vezes ineficiente e percebemos que a área em questão necessitava
+				de uma mudança urgente. O software criado foi nomeado RATER, palavra da língua inglesa para "Avaliador", o que
+				posteriormente acabou definindo o próprio nome da empresa.
+			</p>
+		</div>
+
+		<div class="MVV">
+			<div class="missao">
+				<h1 class="titleMVV">MISSÃO</h1>
+				<br>
+				<p class="textos">
+					Melhorar o desempenho das empresas trazendo softwares que aceleram
+					processos e métodos antigos no ramo empresarial, com segurança, transparência e
+					de ótima qualidade.
+				</p>
+			</div>
+
+			<div class="visao">
+				<h1 class="titleMVV">VISÃO</h1>
+				<br>
+				<p class="textos">Softwares sendo utilizados em milhares de empresas de todo o mundo, desde
+					uma empresa pequena até as mais renomadas no mercado, sempre ajudando no que
+					for necessário.
+				</p>
+			</div>
+
+			<div class="valores">
+				<h1 class="titleMVV">VALORES</h1>
+				<p class="textos">
+					-Buscar perfeição em tudo;<br>
+					-Responsabilidade com clientes e colaboradores;<br>
+					-Transparência e segurança nos softwares;<br>
+					-Versatilidade;<br>
+					-Qualidade de serviço e inovação;
+				</p>
+			</div>
+		</div>
+
+
+
+	</section>-->
+
+
+</body>
+</html>

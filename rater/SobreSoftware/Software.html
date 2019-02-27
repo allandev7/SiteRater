@@ -1,0 +1,141 @@
+<html>
+<head>
+	<title>Software</title>
+	<meta charset="UTF-8">
+
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" type="text/css" href="..\Menu\styleMenu.css">
+	<link rel="stylesheet" type="text/css" href="..\rodape\rodape.css">
+	<link rel="stylesheet" type="text/css" href="SoftwareCSS.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	<script src="jquery-3.3.1.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+
+<!-- Menu  -->
+	<input type="checkbox" id="btn-menu">
+		<div class="suamae">
+			<label for="btn-menu">&#9776;</label>
+		</div>
+	<nav class="menu">
+		<ul>
+			<li><a href="../download/download.html"><img class="downIco" src="../Menu/downIco.png"></a></li>
+			<li><a class="button" href="../quemsomos/sobrenos.html">QUEM SOMOS?</a></li>
+			<li><a class="button" href="../sobresoftware/software.html">SOFTWARE</a></li>
+			<li><a class="button" href="../paginainicial/index.html">INICIO</a></li>
+
+		</ul>
+	</nav>
+
+
+	<!--PARTE DE CIMA AZUL COM ICONE-->
+	<section class="partesuperiorazul">
+		<img src="ratericon.png" class="icone">
+
+		<h1 class="quemsomos">R.A.T.E.R</h1>
+
+		<p class="quemsomos2">Saiba mais sobre o software R.A.T.E.R</p>
+	</section>
+
+		<section class="Galeria">
+			<h1 class="titulo1">Interfaces</h1>
+			</br>
+			<p class="texto1">Veja algumas capturas de tela das interfaces do sistema.</p>
+			</br>
+			</br>
+			</br>
+
+			<div class="imagembox">
+				<img src="imagensTela/1.png" class="imagens" id="imgGaleria">
+				<input type="button" value="<" class="btnL" id="button">
+				<input type="button" value=">" class="btnR" id="button">
+				<div class="conteudoImagems">
+					<h3 class="tituloImgs">Login</h3>
+					</br>
+					<p class="textImgs">Tela inicial do aplicativo, nela deverão ser inseridos o nome e a senha dos usuários cadastrados no software para.</p>
+				</div>
+			</div>
+			
+			
+
+			<br>
+			<script src="GaleriaScript.js"></script>
+
+		</section>
+		<script>
+	$(document).ready(function(){
+		var
+			documentoTop = $(document).scrollTop();
+
+		function animarCentro(){
+			if(documentoTop => 0 || documentoTop <300) {
+				$('.icone').addClass('iconeAnimation');
+				$('.quemsomos').addClass('quemsomosStart');
+				$('.quemsomos2').addClass('quemsomos2Start');
+			}
+		}
+		animarCentro();
+
+	}());
+	</script>
+
+
+	<!-- texto sobre o site -->
+	<section class="sobreSoftware">
+		<div class="conteudo">
+			<p class="titulo">Sobre o software</p>
+			</br>
+			</br>
+			</br>
+			<p class="texto">
+				O software R.A.T.E.R foi criado com o intuito de "digitalizar" a forma com a qual entrevistas de emprego são feitas. Ele permite com que sejam 				           realizadas entrevistas de emprego de maneira mais rápida e fácil, sendo possivel cadastrar os dados pessoais do entrevistado, escolher critérios a serem analisados durante a entrevista, fazer comentários sobre o desempenho do candidato em cada critério e ao final de cada avaliação as informações sobre o desempenho do entrevistado serão enviadas para o e-mail do mesmo de forma automática e salvas no banco de dados da empresa, sendo preservadas e ficando disponíveis para utilização a qualquer hora.</p>
+				<p class="texto">O software possui dois tipos de usuarios: o entrevistador e o administrador(superior da empresa ou Gerente de RH).</p>
+				<p class="texto">O entrevistador poderá realizar entrevistas própriamente ditas, gerenciar as entrevistas já feitas e checar sua informações.</p>
+				<p class="texto">O administrador, além de possuir as mesmas funções do entrevistador, poderá ter acesso a uma lista de entrevistadores, podendo checar o progresso de cada um deles, visualizar suas entrevistas, manipular suas informações e por fim deletar um entrevistador já exisente ou criar um novo.</p>
+				<p class="texto">O Software é simples de ser manuseado, não precisando de qualquer tipo de especialização ou conhecimento além do comum e pensado para facilitar ao máximo o processo para o qual foi desenvolvido, sendo uma ótima alternativa ao método antigo e ultrapassado com que entrevistas de emprego são normalmente realizadas. R.A.T.E.R é uma adição a qualquer empresa que possa querer utilizá-lo.</p>
+		</div>
+	</section>
+
+
+
+
+		
+	<section class="rodape">
+	<div class="mapasitebox">
+		<p class="topicos1">Mapa Do Site</p>
+		<a href="#" class="jooj"><p class="topicos2ms">Inicio</p></a>
+		<a href="#" class="jooj"><p class="topicos2ms">Software</p></a>
+		<a href="#" class="jooj"><p class="topicos2ms">Quem Somos?</p></a>
+		<a href="#" class="jooj"><p class="topicos2ms">Download</p></a>
+	</div>
+
+	<div class="contatobox">
+		<p class="topicos1">Contato</p>
+		<p class="topicos2"><img src="..\rodape\whatsapp2.png" class="contatoImg">11 94002-8922</p>
+		<p class="topicos2"><img src="..\rodape\gps2.png" class="contatoImg">R. Virgínia Ferni, 400 - Itaquera, São Paulo - SP</p>
+		<p class="topicos2"><img src="..\rodape\gmail2.png" class="contatoImg">ratertcc@gmail.com</p>
+		<div class="rowRedesSociais">
+			<img src="..\rodape\facebook.png" class="logosRedeSociais">
+			<img src="..\rodape\twitter.png" class="logosRedeSociais">
+			<img src="..\rodape\linkedin.png" class="logosRedeSociais">
+		</div>
+	</div>
+
+	<div class="faleConoscoBox">
+		<p class="topicos1">Fale Conosco</p>
+		<input type="text" name="email" placeholder="Seu Email*" class="emailTxt">
+		<br>
+		<input type="text" name="msg" placeholder="Mensagem" class="msgTxt">
+	</div>
+	</section>
+
+	
+
+</body>
+</html>

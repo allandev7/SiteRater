@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Compre Agora</title>
+	<link rel="stylesheet" type="text/css" href="..\Menu\styleMenu.css">
+	<link rel="stylesheet" type="text/css" href="..\rodape\rodape.css">
+	<link rel="stylesheet" type="text/css" href="Download.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<script src="jquery-3.3.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans+TC|Teko|Yanone+Kaffeesatz" rel="stylesheet">
+</head>
+<body>
+	<input type="checkbox" id="btn-menu">
+		<div class="suamae">
+			<label for="btn-menu">&#9776;</label>
+		</div>
+	<nav class="menu">
+		<ul>
+			<li><a href="../download/download.html"><img class="downIco" src="../Menu/downIco.png"></a></li>
+			<li><a class="button" href="../quemsomos/sobrenos.html">QUEM SOMOS?</a></li>
+			<li><a class="button" href="../sobresoftware/software.html">SOFTWARE</a></li>
+			<li><a class="button" href="../paginainicial/index.html">INICIO</a></li>
+
+		</ul>
+	</nav>
+	<!--POPUP-->
+	<div id="popup" class="popup">
+			<button class="btnFechar" onclick="javascript: fechar()">X</button>
+			<div class="tituloContainer">
+				<h1> Teste Grátis do software</h1>
+				<h2>Cadastre-se agora para experimentar</h2>
+			</div>
+			
+			<form class="formulario" method="post" action="cadastro.php">
+				<label class="lbl" >Nome da Empresa*</label>
+				<input class="txt" type="text" name="nomeEmpresa"><br>
+				<label class="lbl" >Email da Empresa*</label>
+				<input class="txt" type="text" name="emailEmpresa"><br>
+				<label class="lbl" >CNPJ </label>
+				<input class="txt" type="text" name="cnpj"><br>
+				<label class="lbl" >Senha*</label> 
+				<input class="txt" type="password" name="senha"><br>
+				<label class="lbl" >Confirmar senha*</label>
+				<input class="txt" type="password" name="senhaC"><br>
+				<input type="submit" value="Cadastrar">
+			</form>
+		</div>
+		<script type="text/javascript">
+			function fechar(){
+				document.getElementById('popup').style.display = 'none';
+			}
+		</script>
+
+
+
+	<section class="Planos">
+		<div class="partTextos">
+			<h1 class="titulo1">Assine agora!</h1>
+			<h1 class="titulo2">Conheça gratuitamente ou inscreva-se na melhor opção para a sua empresa</h1>
+		</div>
+
+		<script>
+			$(document).ready(function(){
+				var
+					animationClass = 'h1-Start',
+					documentoTop = $(document).scrollTop();
+
+				function animarCentro(){
+					if(documentoTop => 0 || documentoTop <300) {
+						$('.partTextos').addClass(animationClass);
+
+					}
+
+				}
+				animarCentro();
+
+			}());
+	</script>
+
+		<div class="planLateraisL">
+			<h3 class="titulosPlanos">Avaliação gratuita</h3>
+			<br>
+			<h1 class="preco">R$ 0,00</h1>
+			<br>
+			<p class="explicacao">Versão gratuita com todos os recursos desbloqueado para você testar durante um mês.</p>
+			<br>
+			<p class="vantagens"><img src="imagens/certo.png" class="certinhoImg">1 mês de teste com recursos ilimitados</p>
+			<br>
+			<input type="button" id="avaliacao" name="Gratis" value="Testar Agora" class="botaoL" onclick="cadastro()">
+		</div>
+
+		<script type="text/javascript">
+			function cadastro() {
+				document.getElementById('popup').style.display = 'block';
+			}
+		</script>
+
+
+		<div class="planCentro">
+			<h3 class="titulosPlanos">Plano Anual</h3>
+			<br>
+			<h1 class="preco">R$ 119,99</h1>
+			<br>
+			<p class="explicacao">Versão anual com todos os recursos disponiveis e com desconto comparado com a versão mensal</p>
+			<br>
+			<p class="vantagens"><img src="imagens/certo.png" class="certinhoImg">Mesmos recursos da assinatura mensal</p>
+			<br>
+			<p class="vantagens"><img src="imagens/certo.png" class="certinhoImg">Desconto de $30,00 da versão final</p>
+			<br>
+			<input type="button" name="compra1ano" value="Em breve" class="botaoD">
+		</div>
+
+
+		<div class="planLateraisR">
+			<h3 class="titulosPlanos">Plano Mensal</h3>
+			<br>
+			<h1 class="preco">R$ 14,99</h1>
+			<br>
+			<p class="explicacao">Versão mensal com recursos ilimitados, pagando apenas 14 reais por mês.ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</p>
+			<br>
+			<p class="vantagens"><img src="imagens/certo.png" class="certinhoImg">Acesso aos dados em qualquer dispositivo</p>
+			<br>
+			<p class="vantagens"><img src="imagens/certo.png" class="certinhoImg">Suporte e atualizações constantes</p>
+			<br>
+			<input type="button" name="compraMes" value="Em breve" class="botaoR">
+		</div>
+	</section>
+
+		<script>
+			$(document).ready(function(){
+				var
+					animationClass = 'PC-Start',
+					documentoTop = $(document).scrollTop();
+						$('.planLateraisL').addClass(animationClass);
+						$('.planCentro').addClass(animationClass);
+						$('.planLateraisR').addClass(animationClass);
+
+			}());
+	</script>
+
+	<section class="Opinioes">
+		<h1 class="OpUsuTitulo">Opiniões dos Usuários</h1>
+
+		<div class="blocoOpinioes">
+			<img src="imgUsuarios/billgates.jpg" class="imgUsuario">
+			<h1 class="nomeUsuarios">Bill Gates</h1>
+			<p class="comentarios">"Nullam elit ipsum, feugiat sed sapien quis, auctor pulvinar massa. Morbi scelerisque massa id cursus tempus. Sed sollicitudin ligula et neque cursus, at porttitor nulla tristique. "</p>
+		</div>
+
+		<div class="blocoOpinioes">
+			<img src="imgUsuarios/stevejobs.jpg" class="imgUsuario">
+			<h1 class="nomeUsuarios">Steve Jobs</h1>
+			<p class="comentarios">" Quisque vel consectetur lectus, sed sagittis nulla. Integer tempus varius quam, vel porttitor arcu lacinia ut. Suspendisse et augue nunc. Suspendisse vehicula nec nibh ut scelerisque. "</p>
+		</div>
+
+		<div class="blocoOpinioes">
+			<img src="imgUsuarios/michaeljordan.jpg" class="imgUsuario">
+			<h1 class="nomeUsuarios">Michael Jordan</h1>
+			<p class="comentarios">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum scelerisque ante. Donec malesuada et nisl ut molestie. Integer eu eros ipsum. Suspendisse diam enim, bibendum vitae massa ac, placerat tincidunt nisi. Cras facilisis auctor ipsum, et gravida neque aliquam eget. "</p>
+		</div>
+
+
+
+	</section>
+
+	<script>
+
+		$(document).ready(function(){
+			var $target = $('.blocoOpinioes'),
+				animationClass = 't-start',
+				offset = $(window).height() * 3/4;
+
+			function animeScroll(){
+				var documentTop = $(document).scrollTop();
+
+				$target.each(function(){
+					var itemTop = $(this).offset().top;
+
+					if(documentTop > itemTop - offset) {
+						console.log(documentTop)
+						$(this).addClass(animationClass);
+					} else if(documentTop<itemTop){
+						$(this).removeClass(animationClass);
+					}
+				})
+			}
+
+
+
+			$(document).scroll(function(){
+				animeScroll();
+			})
+		}());
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+	<section class="rodape">
+		<div class="mapasitebox">
+			<p class="topicos1">Mapa Do Site</p>
+			<a href="#" class="jooj"><p class="topicos2ms">Inicio</p></a>
+			<a href="#" class="jooj"><p class="topicos2ms">Software</p></a>
+			<a href="#" class="jooj"><p class="topicos2ms">Quem Somos?</p></a>
+			<a href="#" class="jooj"><p class="topicos2ms">Download</p></a>
+		</div>
+
+		<div class="contatobox">
+			<p class="topicos1">Contato</p>
+			<p class="topicos2"><img src="..\rodape\whatsapp2.png" class="contatoImg">11 94002-8922</p>
+			<p class="topicos2"><img src="..\rodape\gps2.png" class="contatoImg">R. Virgínia Ferni, 400 - Itaquera, São Paulo - SP</p>
+			<p class="topicos2"><img src="..\rodape\gmail2.png" class="contatoImg">ratertcc@gmail.com</p>
+			<div class="rowRedesSociais">
+				<img src="..\rodape\facebook.png" class="logosRedeSociais">
+				<img src="..\rodape\twitter.png" class="logosRedeSociais">
+				<img src="..\rodape\linkedin.png" class="logosRedeSociais">
+			</div>
+		</div>
+
+		<div class="faleConoscoBox">
+			<p class="topicos1">Fale Conosco</p>
+			<input type="text" name="email" placeholder="Seu Email*" class="emailTxt">
+			<br>
+			<input type="text" name="msg" placeholder="Mensagem" class="msgTxt">
+		</div>
+	</section>
+
+
+</body>
+</html>

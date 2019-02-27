@@ -1,0 +1,334 @@
+html{
+	font-size: 62.5%;
+}
+/*POPUP*/
+.popup{
+	z-index: 4;
+	position: fixed;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	width: 50%;
+	height: 60%;
+	margin: auto;
+	background-color:white;
+	display: none;
+	border-radius: 10px;
+	text-align: center;
+	border: solid 1px black;
+}
+
+.popup .btnFechar{
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	z-index: 5;
+	background-color: red;
+	width: 25px;
+	height: 25px;
+	border-radius: 100px;
+}
+
+.tituloContainer{
+	width: 100%;
+	height: 15%;
+	background-color: #4169E1;
+	text-align: center;
+	padding-top: 2%;
+	border-radius: 10px;
+}
+
+
+.titulo{
+	font-size: 30px;
+	font-family: "Arial";
+	background-color: transparent;
+	margin: 0 auto;
+}
+.lbl{
+	width: 40%;
+	display: inline-block;
+}
+.formulario{
+	background-color:transparent;
+	font-family: "Arial";
+	font-size: 19px;
+	width: 70%;
+	margin: 15% auto;
+	display: inline-block;
+	margin-bottom: 15%;
+}
+
+.menu{
+	z-index: 2;
+	font-size: 1.6em;
+}
+/*primeira parte do site*/
+.Planos{
+	width: 100%;
+	height:100%;
+	margin-top: 70px;
+}
+.partTextos{
+	opacity: 0;
+	transform: translate3d(0px,1000px,0);
+	transition: 0.7s;
+	width: 100%;
+	padding-top: 40px;
+}
+.titulo1{
+	margin-left: 8.2%;
+	font-size: 6.5em;
+	color: #3363a6;
+}
+.titulo2{
+	font-size: 5.5em;
+	color: #23272c;
+	font-weight: 900;
+	width: 57.83%;
+	margin-left: 8.2%;
+}
+.planLateraisR, .planLateraisL, .planCentro {
+	transform: translate3d(0px,700px,0);
+	transition: 0.6s;
+	padding-left: 18px;
+	padding-right: 18px;
+	width: 25.28%;
+	height: auto;
+	padding-top: 25px;
+	float: left;
+	margin-top:100px;
+	margin-bottom: 100px;
+	background-color: white;
+	border: 1px solid rgba(194, 194, 194, 1);
+}
+.planCentro{
+	transition: 0.5s;
+	width: 	27.18%;
+	height: auto;
+	z-index: 1;
+	background-image: url(imgPlanos/PlanCentro1.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-size: auto;
+}
+.planLateraisL{
+	margin-left: 8.2%;
+	margin-top: 142.5px;
+	background-image: url(imgPlanos/PlanLaterais1.png);
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+.planLateraisR{
+	margin-top: 142.5px;
+	background-image: url(imgPlanos/PlanLaterais1.png);
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+.titulosPlanos{
+	font-size: 2.8em;
+	color: white;
+	text-align: justify	;
+	margin-left: 25px;
+	margin-top: 18px;
+}
+.preco{
+	width: 50%;
+	font-size: 3.0em;
+	margin-left: 25px;
+	margin-right: 18px;
+	color: white;
+	margin-top: -10px;
+}
+.explicacao{
+	font-size: 1.7em;
+	padding-left: 10px;
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	padding-bottom: 5px;
+	padding-top: 15px;
+	margin-right: 18px;
+	margin-left: 18px;
+	margin-top:110px;
+	margin-bottom: 	22px;
+	color: #363636;
+}
+.certinhoImg{
+	width: 15px;
+	height: 20px;
+	float: left;
+}
+.vantagens{
+	font-size: 1.8em;
+	float: left;
+	margin-right: 18px;
+	margin-left: 18px;
+	color: #363636;
+	margin-top: 10px;
+}
+.botaoL, .botaoD, .botaoR{
+	clear: 	both;
+	width: 100%;
+	bottom: 0;
+	font-size: 2.0em;
+	padding: 10px;
+	border:none;
+	cursor: pointer;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+
+.planLateraisL .botaoL{
+	width: 100%;
+	margin-top: 20%;
+	margin-bottom: 10%;
+	color: #4171c0;
+	border: 2px solid #4171c0;
+	background-color: white;
+	margin-left: 0;
+	margin-right: 0;
+}
+.planCentro .botaoD{
+	margin-top: 40%;
+	margin-bottom: 10%;
+	color: #4171c0;
+	border: 2px solid #4171c0;
+	background-color: white;
+}
+.planLateraisR .botaoR{
+	margin-top: 10%;
+	margin-bottom: 10%;
+	color: #4171c0;
+	border: 2px solid #4171c0;
+	background-color: white;
+}
+.botaoR:hover{
+	background-color: #4171c0;
+	color: white;
+
+}
+.botaoL:hover{
+	background-color: #4171c0;
+	color: white;
+
+}
+.botaoD:hover{
+	background-color: #4171c0;
+	color: white;
+
+}
+
+
+/*segunda parte do site com as opinioes*/
+.Opinioes{
+	clear: both;
+	width: 100%;
+	height: 100%;
+	background-color:#efefef;
+	padding-top: 50px;
+}
+.OpUsuTitulo{
+	font-size: 	4.9em;
+	margin-left: 5.3%;
+	color: 	#3363a6;
+	padding-bottom: 100px;
+}
+.blocoOpinioes{
+	opacity: 0;
+	transform: translate3d(-100px,0px,0);
+	transition: 0.5s;
+	background-color: #efefef;
+	border-top: 1px solid #dcdcdc;
+	padding-left: 100px;
+	padding-right: 	100px;
+	padding-bottom: 80px;
+	padding-top: 20px;
+	margin-left: 5.3%;
+	margin-right: 5.3%;
+}
+.imgUsuario{
+	width: 	80px;
+	height: 80px;
+	border-radius: 	100%;
+	border:1px solid #4171c0;
+	float: left;
+}
+.nomeUsuarios{
+	float: left;
+	font-size: 3.8em;
+	padding-left: 30px;
+	margin-top: 18px;
+	color: #4171c0;
+	font-style: italic;
+}
+.comentarios{
+	clear: both;
+	font-size: 	2.2em;
+	padding-left: 115px;
+	font-style: italic;
+	padding-top: 10px;
+	color: gray;
+}
+
+
+
+/*animação*/
+.h1-Start{
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+.t-start{
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+.PC-Start{
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
+
+@media(max-width: 1505px){
+	.botaoL{
+		width: 100%;
+		margin-top: 117px;
+		color: #4171c0;
+		border: 2px solid #4171c0;
+		background-color: white;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.botaoC{
+		margin-top: 168px;
+		background-color: #4171c0;
+		color: white;
+		border:2px solid #4171c0;
+	}
+	.botaoR{
+		margin-top: 83px;
+		color: #4171c0;
+		border: 2px solid #4171c0;
+		background-color: white;
+	}
+	.planLateraisL{
+		margin-left: 8.2%;
+		margin-top: 142.5px;
+		background-image: url(imgPlanos/PlanLaterais1.png);
+		background-repeat: no-repeat;
+	}
+
+}
+@media(max-width:900px ){
+	.planLateraisR, .planLateraisL, .planCentro {
+		width:80%;
+		text-align: center;
+		margin-left: 5%;
+		background-size: 100% 40%;
+
+	}
+	.lbl{
+		width: auto;
+
+}
+
+
+
+}

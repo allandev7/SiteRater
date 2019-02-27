@@ -1,0 +1,170 @@
+<!-- @author: Allan Pereira -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="..\Menu\styleMenu.css">
+	<link rel="stylesheet" type="text/css" href="..\rodape\rodape.css">
+	<link rel="stylesheet" type="text/css" href="styleContent.css">
+	<script src="jquery-3.3.1.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<title>RATER</title>
+</head>
+<body>
+
+	<input type="checkbox" id="btn-menu">
+	<div class="suamae">
+		<label for="btn-menu">&#9776;</label>
+	</div>
+	<nav class="menu">
+		<ul>
+			<li><a href="../download/download.html"><img class="downIco" src="../Menu/downIco.png"></a></li>
+			<li><a class="button" href="../quemsomos/sobrenos.html">QUEM SOMOS?</a></li>
+			<li><a class="button" href="../sobresoftware/software.html">SOFTWARE</a></li>
+			<li><a class="button" href="#">INICIO</a></li>
+
+		</ul>
+	</nav>
+
+
+
+	<section class="part1">
+		<div class="intro">
+			<h1 class="tituloGG">
+				<i>R.A.T.E.R</i><br>
+				O futuro<br>
+				para a sua<br>
+				entrevista!<br>
+			</h1>
+			<br>
+
+			<div class="botoes">
+				<form method="get" action="../download/download.html">
+					<button type="submit" class="btnDownload">Download</button>
+				</form>
+
+				<form method="get" action="../sobresoftware/software.html">
+					<button type="submit" class="btnSaibaMais">Saiba Mais</button>
+				</form>
+
+			</div>
+		</div>
+
+		<div class="iconDown">
+			<img src="PrimeiraParteSite/ratericon.png" class="iconSoft">
+			<br>
+		</div>
+
+	</section>
+
+	<script>
+	$(document).ready(function(){
+		var
+			animationClass = 'intro-Start',
+			documentoTop = $(document).scrollTop();
+
+		function animarCentro(){
+			if(documentoTop => 0 || documentoTop <300) {
+				$('.intro').addClass(animationClass);
+				$('.iconDown').addClass('icone-Start')
+
+			}
+
+		}
+		animarCentro();
+
+	}());
+	</script>
+
+
+
+	<section class="segundaParte">
+		<div class="textBox1">
+			<h1 class="titulos">O que é o <i>R.A.T.E.R</i> ?</h1><!--PENSEM EM UM TITULO MELHOR PLS-->
+			<p class="textos">	A cada dia mais de 1000 entrevistas de emprego são realizadas apenas em nosso país, podendo variar de simples contratações para
+				micro e pequenas empresas até processos seletivos para grandes corporações. Cada vez mais, com o aumento da competitividade
+				no mercado de trabalho, o desempenho dos candidatos nas entrevistas adquire um peso maior em sua carreiras, tornando cada vez mais
+				importante que o mesmo receba um feedback sobre seu desempenho, que muitas vezes acaba não sendo repassado pela empresa por falta
+				de recursos, tempo ou até mesmo organização, podendo levá-la a ser mal falada e acarretar uma série de problemas
+				tanto para a sua reputação quanto para sua integridade, o que faz com que ela seja mal vista por profissionais e até mesmo mal
+				interpretada.
+				O Software R.A.T.E.R surge como uma alternativa nova e digital para efetuar as entrevistas, salvar as informações de
+				cada candidato e dar o retorno, tudo de maneira mais fácil, rápida e organizada.
+			</p>
+		</div>
+
+		<div class="rowVantagens">
+			<div class="boxsVantagens">
+				<img src="SegundaParteSite/um.png" class="imagens2" >
+				<br>
+				<p class="textos" id="textosID">
+					Salve as informações e o desempenho de cada candidato entrevistado em sua empresa
+					e tenha acesso a esses dados a qualquer hora.
+				</p>
+			</div>
+
+			<div class="boxsVantagens" id="boxCenter">
+				<img src="SegundaParteSite/dois.png" class="imagens2">
+				<br>
+				<p class="textos" id="textosID">
+					Tenha acesso a informações de cada entrevistador em sua empresa, saiba quantas entrevistas foram
+					realizadas, quantas pessoas foram contratadas ou recusadas e os motivos.
+				</p>
+			</div>
+
+			<div class="boxsVantagens">
+				<img src="SegundaParteSite/tres.png" class="imagens2">
+				<br>
+				<p class="textos" id="textosID">
+					Envie o feedback para cada pessoa de forma automática logo ao final da entrevista, poupando tempo, recursos e tornando sua relação com os candidatos mais transparente.<br></br>
+				</p>
+			</div>
+
+		</div>
+	</section>
+
+
+	<section class="rodape">
+	<div class="mapasitebox">
+		<p class="topicos1">Mapa Do Site</p>
+		<a href="#" class="jooj"><p class="topicos2ms">Inicio</p></a>
+		<a href="#" class="jooj"><p class="topicos2ms">Software</p></a>
+		<a href="#" class="jooj"><p class="topicos2ms">Quem Somos?</p></a>
+		<a href="#" class="jooj"><p class="topicos2ms">Download</p></a>
+	</div>
+
+	<div class="contatobox">
+		<p class="topicos1">Contato</p>
+		<p class="topicos2"><img src="..\rodape\whatsapp2.png" class="contatoImg">11 94002-8922</p>
+		<p class="topicos2"><img src="..\rodape\gps2.png" class="contatoImg">R. Virgínia Ferni, 400 - Itaquera, São Paulo - SP</p>
+		<p class="topicos2"><img src="..\rodape\gmail2.png" class="contatoImg">ratertcc@gmail.com</p>
+		<div class="rowRedesSociais">
+			<img src="..\rodape\facebook.png" class="logosRedeSociais">
+			<img src="..\rodape\twitter.png" class="logosRedeSociais">
+			<img src="..\rodape\linkedin.png" class="logosRedeSociais">
+		</div>
+	</div>
+
+	<div class="faleConoscoBox">
+		<p class="topicos1">Fale Conosco</p>
+		<input type="text" name="email" placeholder="Seu Email*" class="emailTxt">
+		<br>
+		<input type="text" name="msg" placeholder="Mensagem" class="msgTxt">
+	</div>
+	</section>
+
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

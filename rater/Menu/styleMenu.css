@@ -1,0 +1,139 @@
+/*@author: Allan Pereira*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans TC', sans-serif;
+
+
+}
+.suamae{
+	visibility: hidden;
+}
+
+.menu{
+	background-image: url("logosite4.png");
+	background-repeat: no-repeat;
+	background-position: left;
+	z-index: 2;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 70px;
+	background-color:#131313;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+
+
+}
+
+.menu ul{
+	list-style: none;
+	position: relative;
+
+	margin-right: 6%;
+}
+.menu ul li{
+	width: 15%;
+	float: right;
+
+}
+.button{
+	display: block;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	padding: 20px;
+	padding-left: 20px;
+	background-color:##2b2a2a;
+	padding-top: 22px;
+	background-repeat: repeat;
+
+}
+.downIco{
+	width: 35%;
+	margin-top: 10%; 
+	margin-left: 30% ;
+}
+.menu ul ul{
+	background-color: #222222;
+	position: absolute;
+	visibility: hidden;
+
+	background-repeat: repeat;
+}
+.menu ul li:hover ul{
+	visibility: visible;
+}
+.button:hover {
+/*	background-image: url("Menu/teste.png");*/
+	color: white;
+	font-weight: bold;
+
+	text-decoration: none;
+}
+.menu ul ul li{
+	float: none;
+}
+label[for="btn-menu"]{
+	padding: 5px;
+	background-color: #222;
+	color: #fff;
+	font-family: 'Arial';
+	font-size: 30px;
+	cursor: pointer;
+	width: 2%;
+	height: 50px;
+}
+#btn-menu{
+		display: none;
+	}
+label[for="btn-menu"]{
+	display: 	none;
+}
+
+
+
+@media(max-width: 900px){
+	.suamae{
+		background-image: url("logosite4.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		z-index: 3;
+		position: fixed;
+		top: 0;
+		visibility: visible;
+		background-color: black;
+		width: 100%;
+	}
+	label[for="btn-menu"]{
+		display:block;
+		background-color: black;
+	}
+	.menu{
+		top: 60px;
+		width: 100%;
+		margin-left: -100%;
+		transition: all .4s;
+	}
+	#btn-menu:checked ~ .menu{
+		margin-left: 0;
+	}
+	.menu ul li{
+		background-color: black;
+		width: 100%;
+		float: none;
+	}
+	.menu ul ul{
+		position: static;
+		overflow: hidden;
+		max-height: 0;
+		transition: all .4s;
+	}
+	.menu ul li:hover ul{
+	visibility: visible;
+}
+.downIco{
+	display: none;
+}
+
+
+}
