@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 28-Fev-2019 às 18:12
+-- Generation Time: 01-Mar-2019 às 17:32
 -- Versão do servidor: 5.7.21
 -- PHP Version: 5.6.35
 
@@ -104,6 +104,7 @@ CREATE TABLE IF NOT EXISTS `empresa` (
   `SENHA` varchar(30) DEFAULT NULL,
   `NOME` varchar(30) DEFAULT NULL,
   `FOTO` varchar(50) DEFAULT NULL,
+  `CNPJ` varchar(18) NOT NULL,
   `EMAIL_VALIDO` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `EMAIL` (`EMAIL`)
@@ -113,8 +114,8 @@ CREATE TABLE IF NOT EXISTS `empresa` (
 -- Extraindo dados da tabela `empresa`
 --
 
-INSERT INTO `empresa` (`ID`, `EMAIL`, `SENHA`, `NOME`, `FOTO`, `EMAIL_VALIDO`) VALUES
-(1, 'allansilvapereira10@gmail.com', 'allan2525', 'Allan', '252525', 0);
+INSERT INTO `empresa` (`ID`, `EMAIL`, `SENHA`, `NOME`, `FOTO`, `CNPJ`, `EMAIL_VALIDO`) VALUES
+(1, 'allansilvapereira10@gmail.com', 'allan2525', 'Allan', '252525', '', 0);
 
 -- --------------------------------------------------------
 
@@ -151,6 +152,7 @@ CREATE TABLE IF NOT EXISTS `entrevistador` (
   `EMAIL` varchar(30) DEFAULT NULL,
   `SENHA` varchar(30) DEFAULT NULL,
   `NOME` varchar(30) DEFAULT NULL,
+  `RG` varchar(9) NOT NULL,
   `ENTREVISTAS_REALIZADAS` int(11) DEFAULT NULL,
   `ADMISSÕES` int(11) DEFAULT NULL,
   PRIMARY KEY (`ID`),
