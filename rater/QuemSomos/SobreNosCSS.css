@@ -9,25 +9,28 @@
 	margin-top: 0;
 }
 .intro{
+	width: 50%;
 	opacity: 0;
   	transform: translate3d(-500px,0px,0);
   	transition: 1.5s;
-	padding-top:  150px;
-	margin-left: 15%;
+	margin-top:  14%;
+	margin-left: 10%;
 	float: left;
 }
  .tituloGG{
  	color:white;
- 	font-size: 5.5em;
+ 	font-size: 6.2em;
  }
 .icone{
+	width: 30%;
 	text-align: center;
 	transform: translate3d(0,500px,0);
 	transition: 1.5s;
 	float: 	left;
-	width: 	25.60%;
-	padding-top: 15.64%;
-	margin-left: 11.37%;
+	max-width: 100%;
+	height: auto;
+	margin-top:14%;
+	margin-left: 5%;
 }
 .iconeStart{
 	transform: translate3d(0,0,0);
@@ -183,3 +186,11 @@
 		margin-bottom: 10%;
 	}
 }
+@media (max-width: 1052px) {
+
+	.icone{
+		display: none;
+	}
+
+}
+

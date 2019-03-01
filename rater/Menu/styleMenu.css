@@ -29,12 +29,15 @@
 	list-style: none;
 	position: relative;
 
-	margin-right: 6%;
+	margin-right: 0%;
 }
 .menu ul li{
-	width: 15%;
+	width: 10%;
 	float: right;
-
+}
+.qs{
+	text-align: center;
+	width: 145px;
 }
 .button{
 	display: block;
@@ -42,16 +45,17 @@
 	color: white;
 	text-decoration: none;
 	padding: 20px;
-	padding-left: 20px;
+	padding-left: 0px;
+	padding-right: 0px;
 	background-color:##2b2a2a;
 	padding-top: 22px;
 	background-repeat: repeat;
 
 }
 .downIco{
-	width: 35%;
-	margin-top: 10%; 
-	margin-left: 30% ;
+	width: 55%;
+	margin-top: 10%;
+	margin-left: 35% ;
 }
 .menu ul ul{
 	background-color: #222222;
@@ -93,6 +97,9 @@ label[for="btn-menu"]{
 
 
 @media(max-width: 900px){
+	.qs{
+		width: 100%;
+	}
 	.suamae{
 		background-image: url("logosite4.png");
 		background-repeat: no-repeat;

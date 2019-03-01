@@ -18,7 +18,7 @@
 	<nav class="menu">
 		<ul>
 			<li><a href="../download/download.html"><img class="downIco" src="../Menu/downIco.png"></a></li>
-			<li><a class="button" href="../quemsomos/sobrenos.html">QUEM SOMOS?</a></li>
+			<li><a class="button qs" href="../quemsomos/sobrenos.html">QUEM SOMOS?</a></li>
 			<li><a class="button" href="../sobresoftware/software.html">SOFTWARE</a></li>
 			<li><a class="button" href="../paginainicial/index.html">INICIO</a></li>
 
@@ -28,8 +28,8 @@
 	<div id="popup" class="popup">
 			<button class="btnFechar" onclick="javascript: fechar()">X</button>
 			<div class="tituloContainer">
-				<h1> Teste Grátis do software</h1>
-				<h2>Cadastre-se agora para experimentar</h2>
+				<h1 class="t1"> Teste Grátis do software</h1>
+				<h2 class="t2">Cadastre-se agora para experimentar</h2>
 			</div>
 			
 			<form class="formulario" method="post" action="cadastro.php">
@@ -43,7 +43,9 @@
 				<input class="txt" type="password" name="senha"><br>
 				<label class="lbl" >Confirmar senha*</label>
 				<input class="txt" type="password" name="senhaC"><br>
-				<input type="submit" value="Cadastrar">
+				<br>
+				<br>
+				<input type="submit" value="Cadastrar" class="btnCadastrar">
 			</form>
 		</div>
 		<script type="text/javascript">
