@@ -1,12 +1,11 @@
-
+﻿
 /*primeira parte do site*/
 .part1{
 	height: 100vh;
-	background-image: url(imgsPagina/fundinho.png);
+	background-image: url(imgsPagina/teste.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
-	margin-top: 0;
+	
 }
 .intro{
 	width: 50%;
@@ -22,6 +21,7 @@
  	font-size: 6.2em;
  }
 .icone{
+	opacity:0;
 	width: 30%;
 	text-align: center;
 	transform: translate3d(0,500px,0);
@@ -41,8 +41,8 @@
 /*segunda parte do site com missao visao valores*/
  .partHMVV{
  	background-color: white;
- 	height: 100%;
- 	padding-bottom: 350px;
+ 	height: 110vh;
+ 	padding-bottom: 50px;
  }
 .titleHist{
 	padding-top: 70px;
@@ -178,6 +178,13 @@
 
 
 @media (max-width: 900px) {
+	.part1{
+		height: 100vh;
+		background-image: url(imgsPagina/teste3res.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-top: 0;
+	}
 	.icone{
 		display: none;
 	}
@@ -185,12 +192,51 @@
 		width: 70%;
 		margin-bottom: 10%;
 	}
-}
-@media (max-width: 1052px) {
-
-	.icone{
-		display: none;
+	.intro{
+		width: 90%;
+		height: 100vh;
 	}
+	.imgsPessoas{
+		margin-top: 60px;
+		float: left;
+		width: 15.80%;
+		border: 2.5px solid #3165aa;
+		border-radius: 100%;
+		margin-left: 42.1%;
+		margin-bottom: 20px;
+		
+    }
+	.nomes{
+		clear: both;
+		margin-top: 0px;
+		padding-top: 1.89%;
+		font-size: 4.0em;
+		text-align: center;
+		color: #3165aa;
+	}
+	.cargos{
+		clear: both;
+		text-align: center;
+		font-size: 2.5em;
+		font-style: italic;
+		color: gray;
+	}
+	.textoCargos{
+		margin-left: 5%;
+		clear: both;
+		text-align: center;
+		width: 90%;
+		font-size: 2.2em;
+		color: gray;
+		font-style: italic;
+		text-align: justify-all;
+	}
+	.blocopessoas{
+		background: none;
+	}
+}
+@media (max-width: 105px) {
+	
 
 }
 

@@ -21,7 +21,7 @@
 			//verificação se as senhas confere,
 			if($senha == $senhaC){
 				//INSERT no banco junto com verificação para tratamento de erros
-				if (mysqli_query($con, "INSERT INTO `EMPRESA` (`EMAIL`, `SENHA`, `NOME`, `FOTO`, `EMAIL_VALIDO`) VALUES ('$emailEmpresa', '$senha', '$nomeEmpresa', '$cnpj', 0);")) {
+				if (mysqli_query($con, "INSERT INTO `adm` (`nomeEmpresa`, `emailEmpresa`, `CNPJ`, `senha`, `	status`) VALUES ('$nomeEmpresa', '$emailEmpresa', '$cnpj', '$senha', 0);")) {
 
 					//condições caso seja inserido
 
