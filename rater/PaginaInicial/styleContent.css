@@ -10,7 +10,7 @@
 
 /*----------------------------------------------------*/
 .part1{
-	height: 100vh;
+	height: 103vh;
 	width: 100%;
 	background-image: url("PrimeiraParteSite/fundinho.png");
 	background-repeat: no-repeat;
@@ -19,8 +19,8 @@
 }
 .intro{
 	opacity: 0;
-  transform: translate3d(-500px,0px,0);
-  transition: 1.5s;
+  	transform: translate3d(-500px,0px,0);
+	transition: 1.5s;
 	margin-top: 13.58%;
 	margin-left: 10%;
 	float: left;
@@ -120,6 +120,7 @@
 	text-align: center;
 	width: 30.33%;
 	float: left;
+	margin-bottom: 10%;
 }
 .imagens2{
 	background: transparent;

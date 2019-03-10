@@ -3,7 +3,7 @@
 	if(!$con = mysqli_connect('localhost', 'root', '')){
 		echo "Erro ao conectar";
 	}
-	if(!mysqli_select_db($con, 'empresa')){
+	if(!mysqli_select_db($con, 'rater')){
 		echo "Erro ao selecionar db";
 	}
 

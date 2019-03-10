@@ -9,8 +9,16 @@
 	$nomeEmpresa = $_POST['nomeEmpresa'];
 	$emailEmpresa = $_POST['emailEmpresa'];
 	$cnpj = $_POST['cnpj'];
+	$imgEmpresa = $_FILES['imgEmpresa'];
 	$senha = $_POST['senha'];
 	$senhaC = $_POST['senhaC'];
+
+	//pegar extensao da imagem
+	$extensao = substr($imgEmpresa['name'], -4);
+	//configurar novo nome do arquivo
+	$nomeArquivo = md5(time().$imgEmpresa['size']).$extensao;
+	//mover arquivo para
+	move_uploaded_file($imgEmpresa['tmp_name'], "../../../imgEmpresas/$nomeArquivo");
 	
 
 	//verificação dos campos
@@ -21,7 +29,7 @@
 			//verificação se as senhas confere,
 			if($senha == $senhaC){
 				//INSERT no banco junto com verificação para tratamento de erros
-				if (mysqli_query($con, "INSERT INTO `adm` (`nomeEmpresa`, `emailEmpresa`, `CNPJ`, `senha`, `	status`) VALUES ('$nomeEmpresa', '$emailEmpresa', '$cnpj', '$senha', 0);")) {
+				if (mysqli_query($con, "INSERT INTO `empresa` (`ID`, `EMAIL`, `SENHA`, `NOME`, `FOTO`, `CNPJ`, `EMAIL_VALIDO`) VALUES (NULL, '$emailEmpresa', '$senha', '$nomeEmpresa', '$nomeArquivo', '$cnpj', '0');")) {
 
 					//condições caso seja inserido
 
@@ -37,7 +45,7 @@
 					//enviar email com link de verificação
 					mail($emailEmpresa, "CONFIRMAR EMAIL RATER", "clique neste link para confirmar o seu 	email ".$link);
 					//avisar sobre a mensagem para o usuário
-					print "<script>alert('Foi enviado uma mensagem de confirmação no seu email ');</script>"	;
+					print "<script>alert('Foi enviado uma mensagem de confirmação no seu email  ');</script>"	;
 					//voltar para a page down
    					print "<script>location.href='download.html';</script>";
 				}else{
