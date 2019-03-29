@@ -3,7 +3,14 @@
 	<title>RATER</title>
 </head>
 <?php
+
 	require('connect.php');
+
+	require_once 'azure/vendor/autoload.php';
+	use WindowsAzure\Common\ServicesBuilder;
+	use MicrosoftAzure\Storage\Common\ServiceException;
+	use MicrosoftAzure\Storage\File\FileRestProxy;
+
 
 	//pegar as inforrmações do formulário via POST
 	$nomeEmpresa = $_POST['nomeEmpresa'];
@@ -13,13 +20,44 @@
 	$senha = $_POST['senha'];
 	$senhaC = $_POST['senhaC'];
 
+
+
+
+
+
 	//pegar extensao da imagem
 	$extensao = substr($imgEmpresa['name'], -4);
 	//configurar novo nome do arquivo
 	$nomeArquivo = md5(time().$imgEmpresa['size']).$extensao;
 	//mover arquivo para
-	move_uploaded_file($imgEmpresa['tmp_name'], "../../../imgEmpresas/$nomeArquivo");
+	//move_uploaded_file($imgEmpresa['tmp_name'], "imgUsuarios/$nomeArquivo");
 	
+	//string de conexao
+	$conexaoAzureStr = 'DefaultEndpointsProtocol=https;AccountName=rater;AccountKey=hWdeapYU1cxuqzSFUx1vCfzHBAsz/AkgnU0L08fGJ/5W+56LJ2bUCaSB5IYM5WnJu8OlUulV1bO4iUvXo8yo8A==';
+
+	//instanciando servico que fará vc upar os arquivos pro azure
+	//$blobRestProxy = ServicesBuilder::getInstance()->createBlobService($conexaoAzureStr);
+	$fileClient = FileRestProxy::createFileService($conexaoAzureStr);
+	
+	//$jooj = ServicesBuilder::getInstance()->createFileService($conexaoAzureStr);
+
+	
+	try{
+
+		$fileClient->createFile("rater/imagens", $imgEmpresa['tmp_name'], 400000);	
+      //  $jooj->createBlockBlob("rater/imagens", "aaa", $imgAzure);
+	
+
+	} catch(ServiceException $e){
+        // Handle exception based on error codes and messages.
+        // Error codes and messages are here:
+        // http://msdn.microsoft.com/library/azure/dd179439.aspx
+        $code = $e->getCode();
+        $error_message = $e->getMessage();
+        echo $code.": ".$error_message."<br />";
+    }
+
+
 
 	//verificação dos campos
 	if ($nomeEmpresa != "" && $emailEmpresa !="" && $senha!= "") {
