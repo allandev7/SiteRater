@@ -33,18 +33,18 @@
 	//move_uploaded_file($imgEmpresa['tmp_name'], "imgUsuarios/$nomeArquivo");
 	
 	//string de conexao
-	$conexaoAzureStr = 'DefaultEndpointsProtocol=https;AccountName=rater;AccountKey=hWdeapYU1cxuqzSFUx1vCfzHBAsz/AkgnU0L08fGJ/5W+56LJ2bUCaSB5IYM5WnJu8OlUulV1bO4iUvXo8yo8A==';
+	$conexaoAzureStr = 'DefaultEndpointsProtocol=https;AccountName=rater;AccountKey=hWdeapYU1cxuqzSFUx1vCfzHBAsz/AkgnU0L08fGJ/5W+56LJ2bUCaSB5IYM5WnJu8OlUulV1bO4iUvXo8yo8A==;EndpointSuffix=core.windows.net';
 
 	//instanciando servico que fará vc upar os arquivos pro azure
 	//$blobRestProxy = ServicesBuilder::getInstance()->createBlobService($conexaoAzureStr);
-	$fileClient = FileRestProxy::createFileService($conexaoAzureStr);
+	
 	
 	//$jooj = ServicesBuilder::getInstance()->createFileService($conexaoAzureStr);
 
 	
 	try{
-
-		$fileClient->createFile("rater/imagens", $imgEmpresa['tmp_name'], 400000);	
+		$fileClient = FileRestProxy::createFileService($conexaoAzureStr)->createFile("rater/imagens", $imgEmpresa['tmp_name'], $imgEmpresa['size']);
+	  //$fileClient->createFile("rater/imagens", $imgEmpresa['tmp_name'], 400000);	
       //  $jooj->createBlockBlob("rater/imagens", "aaa", $imgAzure);
 	
 

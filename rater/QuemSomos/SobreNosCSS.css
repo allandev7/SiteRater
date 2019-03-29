@@ -63,12 +63,14 @@
 	clear: both;
 	margin-top: 120px;
 	margin-left: 10%;
+	
 }
 .mvvbox{
 	width: 26.6%;
 	float: left;
 	padding-left:30px;
 	padding-right:30px;
+
 }
 .titleMVV{
 	font-size: 3.2em;
