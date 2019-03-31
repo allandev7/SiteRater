@@ -88,9 +88,11 @@ html{
 	width: 98%;
 	margin-left: 0;
 	text-align: center;
-	padding-bottom: 10%;
+	padding-bottom: 70px;
 }	
 .faleConoscoBox{
+
+	text-align: center;
 	width: 90%;
 	margin: 0 auto;
 	float: none;
@@ -99,6 +101,7 @@ html{
 	height: 600px;
 }
 .rowRedesSociais{
+	text-align: center;
 	margin-left: 0;
 }
 
