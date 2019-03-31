@@ -58,6 +58,9 @@
 	width: 100%;
 	margin-bottom: 10%;
 }
+.pao{
+	padding-left: 15%;
+}
 p{
 	margin-bottom: 2%;
 }
@@ -75,6 +78,12 @@ p{
 	width: 100%;
 	font-size: 4.8em;
 	color: #3165aa;
+	text-align: justify;
+}
+.tituloInterface{
+	margin-left: 0px;
+	padding-left: 0px;
+
 }
 
 /*parte da galeria*/
@@ -216,6 +225,3 @@ p{
 
 }
 
-.vactli{
-		left:10% ;
-	}

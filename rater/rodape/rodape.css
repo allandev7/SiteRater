@@ -14,7 +14,7 @@ html{
 	margin-bottom: 0;
 	background-color: #131313;
 	color: white;
-	height:340px;
+	height:350px;
 }
 .faleConoscoBox, .mapasitebox, .contatobox{
 	float: left;
@@ -26,22 +26,22 @@ html{
 	width: 25.46%;
 }
 .contatobox{
-	width: 23.75%;
+	width: 25.75%;
 }
 .rowRedesSociais{
 	clear: both;
-	margin-top: 10px;
+	margin-top: 30px;
 	margin-left:30px;
 	width: 100%;
 
 }
 .logosRedeSociais{
-	width: 5%;
+	width: 50px;
 	margin-right: 10px;
 	cursor: pointer;
 }
 .mapasitebox{
-	width: 15.52%;
+	width: 20.52%;
 }
 
 .topicos1{
@@ -63,17 +63,9 @@ html{
 .contatoImg{
 	margin-right: 10px;
 }
-.emailTxt{
-	margin-top: 10px;
-	font-size: 2.2em;
-	width: 98%;
-}
-.msgTxt{
-	margin-top: 10px;
-	font-size: 2.2em;
-	width: 98%;
-	padding-bottom: 100px;
-}
+
+
+
 .topicos2ms:hover{
 	cursor: pointer;
 	text-decoration:underline;
