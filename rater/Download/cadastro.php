@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 <head>
 	<title>RATER</title>
 </head>
@@ -8,7 +8,7 @@
 
 	//pegar as inforrmações do formulário via POST
 	//$emailEmpresa = mysqli_real_escape_string($_POST['emailEmpresa']);
-	$emailEmpresa= $_POST['emailEmpresa'];
+	$emailEmpresa= ['emailEmpresa'];
 	$nomeEmpresa = $_POST['nomeEmpresa'];
 	$cnpj = $_POST['cnpj'];
 	$senha = $_POST['senha'];
@@ -53,7 +53,7 @@
 						//avisar sobre a mensagem para o usuário
 						print "<script>alert('Foi enviado uma mensagem de confirmação no seu email  ');</script>"	;
 						//voltar para a page down
-						print "<script>location.href='download.html';</script>";
+					//	print "<script>location.href='download.html';</script>";
 					}else{
 						//condições caso nao de o insert
 
