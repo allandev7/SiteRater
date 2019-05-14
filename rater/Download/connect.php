@@ -1,12 +1,9 @@
 <?php
 
-	if(!$con = mysqli_connect('localhost', 'root', '')){
-		echo "Erro ao conectar";
+	if(!$pdo = new PDO('mysql:host=localhost;dbname=rater', 'root', '')){
+		echo "Erro ao conectar com o banco de dados";
 	}
-	if(!mysqli_select_db($con, 'rater')){
-		echo "Erro ao selecionar db";
-	}
-
+	$con = mysqli_connect('localhost', 'root', '');	
 	mysqli_query($con, "SET NAME UTF-8");
 
 ?>
