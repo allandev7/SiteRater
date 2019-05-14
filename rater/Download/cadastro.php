@@ -33,7 +33,7 @@
 				//criptografia da senha
 				$senha = md5($senhaC);
 				//INSERT no banco junto com verificação para tratamento de erros
-				if (mysqli_query($con, "INSERT INTO `empresa` (`ID`, `EMAIL`, `SENHA`, `NOME`, `FOTO`, `CNPJ`, `EMAIL_VALIDO`) VALUES (NULL, '$emailEmpresa', '$senha', '$nomeEmpresa', '$nomeArquivo', '$cnpj', '0');")) {
+				if (mysqli_query($con, "INSERT INTO `empresa` (`ID`, `EMAIL`, `SENHA`, `NOME`, `FOTO`, `CNPJ`, `EMAIL_VALIDO`) VALUES (NULL, '$emailEmpresa', '$senha', '$nomeEmpresa', '', '$cnpj', '0');")) {
 
 					//condições caso seja inserido
 
