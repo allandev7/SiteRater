@@ -14,6 +14,14 @@
 	$senha = $_POST['senha'];
 	$senhaC = $_POST['senhaC'];
 
+
+
+
+
+
+
+
+
 	//verifica se o email já existe
 	$stmt = $pdo->prepare( "SELECT * FROM `empresa` WHERE email = :emailEmpresa");
 	$stmt->bindValue(':emailEmpresa', $emailEmpresa);
