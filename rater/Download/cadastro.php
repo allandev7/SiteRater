@@ -8,7 +8,7 @@
 
 	//pegar as inforrmações do formulário via POST
 	//$emailEmpresa = mysqli_real_escape_string($_POST['emailEmpresa']);
-	$emailEmpresa= ['emailEmpresa'];
+	$emailEmpresa= $_POST['emailEmpresa'];
 	$nomeEmpresa = $_POST['nomeEmpresa'];
 	$cnpj = $_POST['cnpj'];
 	$senha = $_POST['senha'];
@@ -34,7 +34,7 @@
 						//Liga os valores para os valores ajustados
 						$stmt->bindValue(':emailEmpresa', $emailEmpresa);
 						$stmt->bindValue(':nomeEmpresa', $nomeEmpresa);
-						$stmt->bindValue(':cnpj', '$cnpj');
+						$stmt->bindValue(':cnpj', $cnpj);
 						//Executa a query
 						$run = $stmt->execute();
 						//condições caso seja inserido
@@ -53,7 +53,7 @@
 						//avisar sobre a mensagem para o usuário
 						print "<script>alert('Foi enviado uma mensagem de confirmação no seu email  ');</script>"	;
 						//voltar para a page down
-					//	print "<script>location.href='download.html';</script>";
+						print "<script>location.href='download.html';</script>";
 					}else{
 						//condições caso nao de o insert
 
