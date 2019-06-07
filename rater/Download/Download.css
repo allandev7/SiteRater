@@ -31,7 +31,7 @@ html{
 .tituloContainer{
 	width: 100%;
 	height: 15%;
-	background-color: #437fd2;
+	background-image: url(imgPlanos/a.png);
 	text-align: center;
 	padding-top: 2%;
 	color: white;
@@ -54,7 +54,7 @@ html{
 }
 .txt{
 	font-size: 2.2em;
-	border-radius: 5px;
+	border-radius:0px;
 	border: 1px solid rgba(194, 194, 194, 1);
 }
 .formulario{
@@ -417,5 +417,18 @@ html{
 		color: white;
 	}
 
+	.Opinioes{
+		text-align: center;
+		margin-left: 0;
+		margin-right: 0:
 
+	}
+
+	.blocoOpinioes,  .nomeUsuarios, .comentarios{
+		text-align: center;
+		clear: both;
+	}
+	.imgUsuarios{
+		margin-left:100%;
+	}
 }

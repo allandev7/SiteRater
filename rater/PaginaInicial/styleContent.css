@@ -152,7 +152,12 @@
 		margin-left: 5%;
 	}
 }
+@media(max-width: 975px){
+	.iconSoft{
+		display: none;
+	}	
 
+}
 
 
 @media(max-width: 900px){

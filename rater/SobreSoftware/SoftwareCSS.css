@@ -172,6 +172,7 @@ p{
 /*RESPONSIVIDADE*/
 
 @media(max-width: 900px){
+
 	.icone{
 		display: none;
 	}
@@ -182,7 +183,12 @@ p{
 	.quemsomos2{
 		text-align:center;
 	}
-
+	.titulo, .texto3, .pao, .Galeria{
+		text-align: center;
+		margin-left: 0;
+		left: 0;
+		padding-left: 0; 
+	}
 	.titulo1{
 		padding-left: 0;
 		text-align: center;
@@ -211,7 +217,7 @@ p{
 	}
 	.imagembox .conteudoImagems{
 		margin-left: 0;
-		margin-top: 2%;
+		margin-top: -0.2%;
 		width: 99.9%;
 		height: auto;
 		margin-bottom: 4%;
@@ -221,6 +227,9 @@ p{
 
 	.textImgs{
 		width: 99.9%;
+	}
+	p, h1, h2{
+		text-align: center;
 	}
 
 }
