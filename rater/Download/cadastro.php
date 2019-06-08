@@ -48,12 +48,15 @@
 						//condições caso seja inserido
 
 						//query para pegar ultimo id
-						$query = mysqli_query($con,"SELECT LAST_INSERT_ID();");
+						$query = $pdo->prepare("SELECT LAST_INSERT_ID();");
+						$query->execute();
 						//resultado da query em tabela
-						$resul = mysqli_fetch_array($query);
+
+						$result = $query->fetchAll(\PDO::FETCH_ASSOC);
 
 						//pegar id apartir da primeira e unica linha do resul, e já transforma-lo em md5
-						$id = md5($resul[0]);
+						$id = md5($result[0]["LAST_INSERT_ID()"]);
+
 						//criar link com a variavel id
 						$link= "http://localhost/rater/download/confirmar.php?id=$id";
 						//enviar email com link de verificação
