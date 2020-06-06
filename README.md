@@ -4,7 +4,7 @@ Este foi o Site comercial do nosso software desenvolvido para o TCC da ETEC Itaq
 
 ## Habilidades adquiridas :notebook:
 
-Queriamos aprender as linguagens da forma mais pura possível, logo não usamos bootstrap para responsividade do site e nem frameworks SPA, apenas Jquery para as animações, também utilizamos envio de email como um diferencial para o tecnico de informatica, simulando localmente o server de email(Configuração a ser feita separadamente no WAMP ou XAMP).
+Queriamos aprender as linguagens da forma mais pura possível, logo não usamos bootstrap para responsividade do site e nem frameworks SPA, apenas Jquery para as animações, também utilizamos envio de email como um diferencial para o técnico de informatica, simulando localmente o server de email(Configuração a ser feita separadamente no WAMP ou XAMP).
 
 ## Telas do Site :computer:
 
@@ -18,5 +18,5 @@ Queriamos aprender as linguagens da forma mais pura possível, logo não usamos 
 ![Download](https://github.com/allandev7/SiteRater/blob/master/Capturas%20Site/Download.gif)
 
 ## Ir para o Software
-[Código do Software](https://github.com/allandev7/BeTheHero/blob/master/Web%20Screenshots.png)
+[Código do Software](https://github.com/allandev7/Rater)
 
